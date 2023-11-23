@@ -1,0 +1,87 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333; /* Dark background */
+    color: #fff; /* Text color */
+    margin: 0;
+    padding: 20px; /* Add spacing to the body */
+}
+
+.navbar {
+    background-color: #444; /* Darker background for the navbar */
+    overflow: hidden;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar a {
+    display: block;
+    color: #FFA500; /* Orange text color */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #555; /* Slightly darker on hover */
+}
+
+.container {
+    background-color: #444; /* Darker background for the container */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+}
+
+.container h1 {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #555; /* Darker background for table headers */
+    color: #FFA500; /* Orange text color for table headers */
+}
+
+tr:nth-child(even) {
+    background-color: #555; /* Darker background for even rows */
+}
+
+tr:nth-child(odd) {
+    background-color: #444; /* Slightly darker background for odd rows */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px; /* Reduce container padding */
+    }
+    .navbar a {
+        padding: 10px 15px; /* Reduce link padding in the navbar */
+    }
+}

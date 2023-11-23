@@ -1,0 +1,123 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333; /* Dark background */
+    color: #fff; /* Text color */
+    margin: 0;
+    padding: 20px; /* Add spacing to the body */
+}
+
+.navbar {
+    background-color: #444; /* Darker background for the navbar */
+    overflow: hidden;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar a {
+    display: block;
+    color: #FFA500; /* Orange text color */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #555; /* Slightly darker on hover */
+}
+
+.container {
+    background-color: #444; /* Darker background for the container */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+}
+
+.container h1 {
+    text-align: center;
+}
+
+.form-group {
+    margin: 20px 0; /* Increased spacing */
+}
+
+.name-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.name-field {
+    flex: 1;
+}
+
+.pad{
+	margin-right: 10px;
+
+}
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0; /* Increased spacing */
+    border: 1px solid #777; /* Slightly lighter border color */
+    border-radius: 3px;
+    background-color: #555; /* Darker input background */
+    color: #fff; /* Text color for inputs */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus,
+input[type="password"]:focus {
+    outline: none;
+    border-color: #FFA500; /* Orange border color on focus */
+}
+
+button[type="submit"] {
+    background-color: #FFA500; /* Orange background color */
+    color: #333; /* Dark text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 20px; /* Increased spacing */
+}
+
+button[type="submit"]:hover {
+    background-color: #FFD700; /* Lighter orange on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px; /* Reduce container padding */
+    }
+    .form-group {
+        margin: 10px 0; /* Reduce form group margin */
+    }
+    .navbar a {
+        padding: 10px 15px; /* Reduce link padding in the navbar */
+    }
+}
